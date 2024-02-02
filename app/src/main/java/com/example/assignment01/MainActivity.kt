@@ -57,7 +57,6 @@ fun MainPicture() {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .weight(1f)
-//                .background( Color("#669999".toColorInt() ) )
         ){
             Image(
                 painter = painterResource(id = R.drawable.android_logo ),
@@ -76,7 +75,6 @@ fun MainPicture() {
                 color = Color("#006600".toColorInt() )
             )
         }
-
         Column(
             modifier = Modifier
                 .padding(bottom = 45.dp)
@@ -84,17 +82,12 @@ fun MainPicture() {
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Row(
-//                modifier = Modifier
-////                    .fillMaxWidth()
-            ) {
+            Row() {
                 Column (
-//                    verticalArrangement = Arrangement.Bottom,
                     horizontalAlignment = Alignment.End,
                     modifier = Modifier
                         .fillMaxWidth(0.12f)
                         .padding( end = 20.dp)
-                        //.weight(0.3f)
                 ){
                     Image(
                         painter = painterResource(id = R.drawable.phone_call_48 ),
@@ -115,14 +108,10 @@ fun MainPicture() {
                         contentDescription = "1",
                         modifier = Modifier
                             .size(35.dp)
-//                            .padding( bottom = 12.dp)
                     )
                 }
                 Column (
-//                    verticalArrangement = Arrangement.Bottom,
                     horizontalAlignment = Alignment.Start,
-//                    modifier = Modifier
-//                        .weight(0.33f)
                 ){
                     Text(
                         text = "+11 (123) 444 555 666",
@@ -145,13 +134,7 @@ fun MainPicture() {
                 }
             }
         }
-
-
-
     }
-
-
-
 }
 
 @Preview(showBackground = true)
